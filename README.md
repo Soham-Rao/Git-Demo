@@ -41,7 +41,7 @@
 
 * `git init` → Initialize a new Git repository.
 * `git clone <url>` → Clone an existing remote repo.
-
+<br></br>
 * `git remote -v` → List configured remote repositories.
 * `git remote add origin <link>` → Connect local repository to remote repository.
 * `git remote set-url origin <url>` → Change remote URL.
@@ -49,10 +49,10 @@
 ### Staging & Committing
 
 * `git status` → Show changes in working directory vs staging area.
-
+<br></br>
 * `git add <file>` → Stage changes for commit.
 * `git add .` → Stage all changes.
-
+<br></br>
 * `git commit -m "<message>"` → Commit staged changes with a message.
 * `git commit -am "<message>"` → Stage and Commit changes in a single command. (files must be tracked)
 * `git commit --amend -m "<new message>"` → Modify last commit message/content.
@@ -63,10 +63,10 @@
 
 * `git branch` → List branches.
 * `git branch <branch>` → Create new branch.
-
+<br></br>
 * `git switch <branch>` → Switch to branch.
 * `git switch -c <branch>` → Create and switch to new branch.
-
+<br></br>
 * `git checkout <branch>` → Older way to switch branches.
 * `git checkout -b <branch>` → Create and switch to new branch.
 
@@ -74,7 +74,7 @@
 
 * `git fetch` → Download latest changes from remote (no merge).
 * `git pull` → Fetch + merge remote branch into current branch (fetch + merge).
-
+<br></br>
 * `git push origin <branch>` → Push local branch to remote.
 * `git push -u origin <branch>` → Push and set upstream (first push).
 
@@ -82,13 +82,13 @@
 
 * `git restore <file>` → Discard changes in working directory.
 * `git revert <commit>` → Create new commit that undoes changes from target commit.
-
+<br></br>
 * `git reset --soft <commit>` → Move HEAD(un-commit), keep changes staged.
 * `git reset --mixed <commit>` → Move HEAD(un-commit), keep changes unstaged (default).
 * `git reset --hard <commit>` → Reset completely to older commit (lose changes).
-
+<br></br>
 * `git stash` → Save uncommitted changes temporarily.
-
+<br></br>
 * `git clean -fd` → Remove untracked files and directories.
 * `git rm <file>` → Remove file from repo + staging.
 * `git mv <old> <new>` → Rename or move a file.
@@ -99,11 +99,11 @@
 * `git merge --no-ff <branch>` → Force a merge commit (preserves history).
 * `git merge --ff-only <branch>` → Fast-forward only (if there is conflict, cancel merge).
 * `git merge --abort` → Cancel merge.
-
+<br></br>
 * `git checkout --ours <file>` → Keep current branch’s version in conflict.
 * `git checkout --theirs <file>` → Keep incoming branch’s version.
 * `git add <file> && git commit` → Finalize resolution *(After manual conflict edits)*.
-
+<br></br>
 * `git rebase <branch>` → Reapply commits on top of another branch. run on new branch; <branch> is which branch to merge to.
 * `git rebase -i <commit>` → Interactive rebase (edit/squash commits).
 * `git rebase --continue` → Continue after fixing conflicts.
@@ -115,13 +115,13 @@
 * `git log --oneline` → Condensed commit history.
 * `git log --oneline --graph --decorate --all --date-order` → Pretty graph view.
 * `git log --pretty=format:"%h %an %s"` → Custom formatted log.
-
+<br></br>
 * `git show <commit>` → Show details of a commit.
 * `git show --no-patch --pretty=format:"%h %p %s" HEAD` → Show commit + parent(s) only.
-
+<br></br>
 * `git diff` → Show unstaged changes.
 * `git diff --staged` → Show staged changes.
-
+<br></br>
 * `git blame <file>` → Show who last modified each line of a file.
 
 ---
